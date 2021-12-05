@@ -1,0 +1,27 @@
+ambiente: desenvolvimento
+usuario : (ecsw) Umberto Sansoni Junior (id_pess = 1682, id_usu = 1682)
+processo: 2012/00074-1
+gerencia técnica    : CENPES/GTEC/CO
+gerente do contrato : Gerente do Contrato (gerecont)
+interlocutor técnico: Interlocutor (interloc)
+
+CENÁRIO 1 (sem função, sem Perfil, sem GT, sem GG, sem gerente, sem interlocutor):
+OK - não enxerga a PC
+
+CENÁRIO 2 (com função, sem Perfil, sem GT, sem GG, sem gerente, sem interlocutor):
+OK - não enxerga a PC
+
+CENÁRIO 3 (com função, com Perfil, sem GT, sem GG, sem gerente, sem interlocutor):
+OK - enxerga a PC
+
+CENÁRIO 4 (com função, sem Perfil, com GT, sem GG, sem gerente, sem interlocutor):
+OK - enxerga a PC
+
+CENÁRIO 5 (com função, sem Perfil, sem GT, com GG, sem gerente, sem interlocutor):
+OK - enxerga a PC
+
+CENÁRIO 6 (com função, sem Perfil, sem GT, sem GG, com gerente, sem interlocutor):
+OK - enxerga a PC
+
+CENÁRIO 7 (com função, sem Perfil, sem GT, sem GG, sem gerente, com interlocutor):
+OK - enxerga a PC

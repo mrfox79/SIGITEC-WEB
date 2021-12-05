@@ -1,0 +1,13 @@
+De acordo com o que foi conversado em chamada realizada no dia 19/11/2021 com a Erica e o Fiche, para não quebrar a arquitetura do sistema no que diz respeito a montagem das funções nos menus e para não haver impacto na segurança do mesmo, ficou decidido que:
+
+O sistema manterá o padrão com relação a função "Mais informações>>Prestação de Contas", os usuários que não estiverem associados a nenhum perfil contendo a função, não verão essa função nos Processos do sistema, caso o usuário possua um perfil com a função associada apenas visualizará a opção, nos seguintes casos: 
+
+Será criado um perfil chamado "Leitor de Prestação de Contas" que pode ser associado a qualquer usuário, e que todos os usuários que possuirem esse perfil podem acessar a função nas interfaces dos sumários de qualquer Processo.
+
+Caso o usuário não possua esse perfil, o sistema observará as regras constantes nesse card, dos itens 1 ao 4 (Gerencia Geral, Gerência Técnica, Interlocutor Técnico e Gerente do Contrato), e caso o usuário se enquadre em pelo menos uma dessas regras ele visualizará a função.
+
+OBS: a Erica indicou como possível solução, um comportamento parecido com o que acontece com os "Relatórios Técnicos" onde o usuário possui um perfil de "Leitor de Relatórios Técnicos" onde a associação ao perfil entra como regra de "permissão". Essa solução foi parcialmente aproveitada, uma vez que o novo perfil "Leitor de Prestação de Contas" é necessário para visualizar a PC em alguns casos, a diferença é que, caso o usuário não se enquadre em nenhuma regra para visualização o mesmo não conseguirá sequer ver a opção no combo "Mais informações" do Processo.
+
+OBS: para funcionar em Produção, é necessária a criação do Perfil com o nome "Leitor de Prestação de Contas" e com a sigla "LPC", o script abaixo deve ser rodado após a inclusão do Perfil pra que a sigla fique de acordo.
+
+Script para alteração da sigla do Perfil:
